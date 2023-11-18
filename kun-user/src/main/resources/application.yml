@@ -26,6 +26,10 @@ spring:
           log-slow-sql: true
         wall:
           enabled: true
+#开启打印完整sql日志功能,设置为false是不开启的,设置为true或不设置是开启的
+sql:
+  beauty:
+    show: true
 #Mybatis相关信息
 mybatis-plus:
   configuration:

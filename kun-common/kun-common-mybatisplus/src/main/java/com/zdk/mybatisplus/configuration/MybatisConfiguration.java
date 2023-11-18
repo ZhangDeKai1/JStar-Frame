@@ -1,4 +1,4 @@
-package com.zdk.mybatisplus.configurations;
+package com.zdk.mybatisplus.configuration;
 
 import com.zdk.mybatisplus.interceptor.SqlBeautyInterceptor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
