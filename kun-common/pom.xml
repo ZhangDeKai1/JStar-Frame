@@ -15,6 +15,7 @@
     <modules>
         <module>kun-common-mybatisplus</module>
         <module>kun-common-web</module>
+        <module>kun-common-redis</module>
     </modules>
 
 
