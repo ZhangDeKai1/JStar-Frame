@@ -10,6 +10,7 @@
     <modules>
         <module>kun-common</module>
         <module>kun-user</module>
+        <module>kun-dependencies</module>
     </modules>
 
     <name>kun-frame</name>
@@ -19,8 +20,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
-
 
 
 <!--    配置阿里镜像-->

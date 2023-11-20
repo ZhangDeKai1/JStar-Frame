@@ -16,6 +16,8 @@
         <module>kun-common-mybatisplus</module>
         <module>kun-common-web</module>
         <module>kun-common-redis</module>
+        <module>kun-common-log</module>
+        <module>kun-common-tool</module>
     </modules>
 
 
@@ -60,6 +62,18 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>19.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.touchbit.retrofit.veslo</groupId>
+            <artifactId>gson</artifactId>
+            <version>1.2.0</version>
         </dependency>
     </dependencies>
 
