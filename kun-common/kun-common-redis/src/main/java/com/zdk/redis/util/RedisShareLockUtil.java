@@ -1,12 +1,14 @@
 package com.zdk.redis.util;
 
 import com.zdk.redis.exception.ShareLockException;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 @Component
+@Slf4j
 public class RedisShareLockUtil {
     @Resource
     private RedisUtil redisUtil;
@@ -52,7 +54,7 @@ public class RedisShareLockUtil {
                 return true;
             }
         } catch (Exception e) {
-            //补日志
+            log.error("RedisShareLockUtil:unLock:error:{}",e.getMessage(),e);
         }
         return false;
     }

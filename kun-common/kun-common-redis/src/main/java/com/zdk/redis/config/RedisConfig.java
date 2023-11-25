@@ -13,7 +13,7 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
- *自定义redis序列化,解决redis序列化令人头疼的问题
+ *自定义redis序列化,解决redis序列化令人头疼的问题,redis默认用的是jdk的序列化
  */
 @Configuration
 public class RedisConfig {

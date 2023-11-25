@@ -1,8 +1,15 @@
 package com.zdk.redis.util;
 
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
+import org.springframework.scripting.support.ResourceScriptSource;
 import org.springframework.stereotype.Component;
 import org.springframework.data.redis.core.RedisTemplate;
+
+import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -18,6 +25,22 @@ public class RedisUtil {
 
     @Resource
     private RedisTemplate redisTemplate;
+
+    private DefaultRedisScript<Boolean> casScript;
+
+    //提前加载lua脚本,用redis加lua实现cas
+    @PostConstruct
+    public void init(){
+        casScript=new DefaultRedisScript<>();
+        casScript.setResultType(Boolean.class);
+        casScript.setScriptSource(new ResourceScriptSource(new ClassPathResource("compareAndSet.lua")));
+    }
+
+    public Boolean compareAndSet(String key,Long oldValue,Long newValue){
+        List<String> keys=new ArrayList<>();
+        keys.add(key);
+        return (Boolean) redisTemplate.execute(casScript,keys,oldValue,newValue);
+    }
 
     /**
      * 构建缓存key
