@@ -67,3 +67,6 @@ mybatis-plus:
 log:
   aspect:
     enable: true
+traceId:
+  filter:
+    enable: true
