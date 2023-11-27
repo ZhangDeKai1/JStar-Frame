@@ -70,3 +70,6 @@ log:
 traceId:
   filter:
     enable: true
+logging:
+  config:
+    classpath: log4j-spring.xml

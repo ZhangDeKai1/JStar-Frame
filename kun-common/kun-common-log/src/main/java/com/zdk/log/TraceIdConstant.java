@@ -1,5 +1,8 @@
 package com.zdk.log;
 
+/**
+ * 常量类
+ */
 public class TraceIdConstant {
 
     // 和日志中的PFTID参数映射
