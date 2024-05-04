@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kun-common/kun-common.iml" filepath="$PROJECT_DIR$/kun-common/kun-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kun-common/kun-common-log/kun-common-log.iml" filepath="$PROJECT_DIR$/kun-common/kun-common-log/kun-common-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kun-common/kun-common-mybatisplus/kun-common-mybatisplus.iml" filepath="$PROJECT_DIR$/kun-common/kun-common-mybatisplus/kun-common-mybatisplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kun-common/kun-common-redis/kun-common-redis.iml" filepath="$PROJECT_DIR$/kun-common/kun-common-redis/kun-common-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kun-common/kun-common-tool/kun-common-tool.iml" filepath="$PROJECT_DIR$/kun-common/kun-common-tool/kun-common-tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kun-common/kun-common-web/kun-common-web.iml" filepath="$PROJECT_DIR$/kun-common/kun-common-web/kun-common-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kun-dependencies/kun-dependencies.iml" filepath="$PROJECT_DIR$/kun-dependencies/kun-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/kun-frame.iml" filepath="$PROJECT_DIR$/.idea/kun-frame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kun-user/kun-user.iml" filepath="$PROJECT_DIR$/kun-user/kun-user.iml" />
+    </modules>
+  </component>
+</project>

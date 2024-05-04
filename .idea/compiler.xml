@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kun-common-mybatisplus" />
+        <module name="kun-dependencies" />
+        <module name="kun-common-web" />
+        <module name="kun-common-tool" />
+        <module name="kun-common-redis" />
+        <module name="kun-user" />
+        <module name="kun-common-log" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="kun-common" target="11" />
+      <module name="kun-common-log" target="11" />
+      <module name="kun-common-mybatisplus" target="11" />
+      <module name="kun-common-redis" target="11" />
+      <module name="kun-common-starter" target="11" />
+      <module name="kun-common-tool" target="11" />
+      <module name="kun-common-web" target="11" />
+      <module name="kun-dependencies" target="11" />
+      <module name="kun-frame" target="11" />
+      <module name="kun-user" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
