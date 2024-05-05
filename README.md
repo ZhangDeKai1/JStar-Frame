@@ -1,1 +1,1 @@
-如果你想在开发的时候让自己更加专注于自己的核心业务，并且在开发新项目时，不想再去做重复且没有意义的操作，不妨试试这个脚手架，欢迎各位大佬前来Star!!
+If you want to focus more on your core business when developing, and don't want to do repetitive and meaningless operations when developing new projects, you might as well try this scaffolding, welcome all the bigwigs to Star!!
